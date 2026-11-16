@@ -118,11 +118,11 @@ In Jenkins Job 1, the following build trigger was also enabled:
 ```text
 GitHub hook trigger for GITScm polling
 ```
-## 4 JOBS 
-## job 1
+## 4. JOBS 
+### job 1 
 <img width="2376" height="5329" alt="image" src="https://github.com/user-attachments/assets/d188adde-6987-4a7e-a5cb-2d2a75e7777a" />
-## job 2 
+### job 2 
 <img width="2376" height="6121" alt="image" src="https://github.com/user-attachments/assets/84e2efa6-3d2b-4617-bcf6-a631af3999fb" />
-## job 3 
+### job 3 
 <img width="2376" height="6208" alt="image" src="https://github.com/user-attachments/assets/ccb3421a-c4d2-40bc-b615-4a035ecbcb30" />
 
