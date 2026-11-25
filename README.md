@@ -99,8 +99,13 @@ http://52.31.15.176:8080/github-webhook/
 
 When someone pushes a change to the `main` branch, GitHub notifies Jenkins. Jenkins then runs the jobs in order:
 
-```text
-Push to GitHub → Webhook → Job 1: get the code → Job 2: prepare the app → Job 3: deploy to EC2 → Updated Tic Tac Toe page
+```mermaid
+flowchart LR
+    A["Push code to main"] --> B["GitHub webhook"]
+    B --> C["Job 1: get the code"]
+    C --> D["Job 2: prepare and test the app"]
+    D --> E["Job 3: deploy to EC2"]
+    E --> F["Updated Tic Tac Toe page"]
 ```
 
 This setup helps the team because it repeats the same steps for every change, finds problems earlier, and reduces manual deployment work. For an organisation, it also makes releases easier to follow because each job has a build result and log.
